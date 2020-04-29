@@ -15,6 +15,7 @@ you can dedfine host aliases inside ***~/.ssh/config*** file
      Hostname gitlab.com
      User mxportocarrero@gmail.com
      PreferredAuthentications publickey
+     AddKeysToAgent yes
      IdentityFile ~/.ssh/<example_ssh_key1>
 
     # User2 Account Identity
@@ -22,7 +23,10 @@ you can dedfine host aliases inside ***~/.ssh/config*** file
      Hostname gitlab.com
      User mxportocarrero@gmail.com
      PreferredAuthentications publickey
+     AddKeysToAgent yes
      IdentityFile ~/.ssh/<example_ssh_key2>
+
+Keys to Agent allow to passphrase to be remembered after one correct authentication
 
 Setting host aliases allow us to have multiple remotes
 
