@@ -31,12 +31,14 @@ or, setting up a new remote repository
 
     git remote set-url origin git@<user_1.gitlab.com>:gitlab-org/gitlab.git
 
-
 ## Test Connection through SSH
 -v option enables printing debug logs
 
     ssh -vT git@github.com
     ssh -vT git@<Host-Alias>
+
+## Show remote repository info
+    git remote show origin
 
 ## Pushing to remote repository
     git push <remote_repo> <remote-branch>
