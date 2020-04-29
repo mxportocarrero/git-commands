@@ -24,6 +24,16 @@ you can dedfine host aliases inside ***~/.ssh/config*** file
      PreferredAuthentications publickey
      IdentityFile ~/.ssh/<example_ssh_key2>
 
+Setting host aliases allow us to have multiple remotes
+
+    $ git remote add one account-one:repository.git
+    $ git remote add two account-two:repository.git
+
+and different push repositories
+
+    $ git push one master
+    $ git push two master
+
 ## Clonning repositories using custom hosts
     git clone git@<user_1.gitlab.com>:gitlab-org/gitlab.git
 
@@ -41,5 +51,14 @@ or, setting up a new remote repository
     git remote show origin
 
 ## Pushing to remote repository
-    git push <remote_repo> <remote-branch>
+    git push <remote_repo> <branch>
     git push origin master
+
+## Managing local and remote branches
+tell Git server to track newly created local branch. that is, create remote branch from local
+
+    git push -u origin dev
+
+oe if you want to change or forgot setting a remote branch
+
+    git branch -u origin/dev
