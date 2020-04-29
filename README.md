@@ -26,7 +26,9 @@ you can dedfine host aliases inside ***~/.ssh/config*** file
      AddKeysToAgent yes
      IdentityFile ~/.ssh/<example_ssh_key2>
 
-Keys to Agent allow to passphrase to be remembered after one correct authentication
+Keys to Agent allow to passphrase to be remembered after one successful authentication. You may need to start and Authentication agent for this feature to work
+
+    eval $(ssh-agent)
 
 Setting host aliases allow us to have multiple remotes
 
