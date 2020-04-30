@@ -8,6 +8,15 @@ Various git commands for setting correctly SSH-Keys and other misteries in the g
 
 ***--global user.name*** sets this info globally but you can ignore it to make it local
 
+## Showing and removing remotes
+All remote repositories assigned to specific local repo
+
+    git remote -v
+
+Delete remote reference to local repo
+
+    git remote remove <remote_url>
+
 ## Generaate SSH Keys
 creates a new SSH key pair, using the provided email as a label. some command examples
 
