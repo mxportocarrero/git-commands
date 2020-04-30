@@ -1,6 +1,13 @@
 # git-commands
 Various git commands for setting correctly SSH-Keys and other misteries in the git world
 
+## Setting Username and Email for submit changes
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+***--global user.name*** sets this info globally but you can ignore it to make it local
+
 ## Generaate SSH Keys
 creates a new SSH key pair, using the provided email as a label. some command examples
 
