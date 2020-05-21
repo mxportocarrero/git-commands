@@ -8,6 +8,8 @@ Various git commands for setting correctly SSH-Keys and other misteries in the g
 
 ***--global user.name*** sets this info globally but you can ignore it to make it local
 
+Aditionally you can use **git config --list** to check actual repository values
+
 ## Showing and removing remotes
 All remote repositories assigned to specific local repo
 
